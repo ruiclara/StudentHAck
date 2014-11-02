@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="StudentHack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +17,158 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJu-6z-WCf">
+                                <rect key="frame" x="318" y="20" width="240" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="FHr-sV-ggj"/>
+                                    <constraint firstAttribute="width" constant="191" id="NbL-PY-pck"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FHr-sV-ggj"/>
+                                        <exclude reference="NbL-PY-pck"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="6" y="76" width="191" height="64"/>
+                                    <mask key="constraints">
+                                        <include reference="FHr-sV-ggj"/>
+                                        <include reference="NbL-PY-pck"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hrp-l0-MV4">
+                                <rect key="frame" x="318" y="20" width="240" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="6Tb-ii-Pnw"/>
+                                    <constraint firstAttribute="width" constant="191" id="dAM-gl-KiR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6Tb-ii-Pnw"/>
+                                        <exclude reference="dAM-gl-KiR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="204" y="76" width="191" height="64"/>
+                                    <mask key="constraints">
+                                        <include reference="6Tb-ii-Pnw"/>
+                                        <include reference="dAM-gl-KiR"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THV-Pd-VUG">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Car">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="148" width="56" height="45"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqU-DX-Yco">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Garlic">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="117" y="148" width="55" height="45"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf6-a7-6w2">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Food">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="200" y="148" width="57" height="45"/>
+                                </variation>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rwU-Iw-v01">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="13" y="224" width="294" height="263"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VIF-db-qni">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="232" y="267" width="149" height="220"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7t5-Rh-gXX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Sleep">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="280" y="155" width="39" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hrp-l0-MV4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="7Ng-nV-0Eu"/>
+                            <constraint firstItem="Hrp-l0-MV4" firstAttribute="leading" secondItem="CJu-6z-WCf" secondAttribute="trailing" constant="8" symbolic="YES" id="QG6-nW-f4C"/>
+                            <constraint firstItem="CJu-6z-WCf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-12" id="RfT-QT-5nI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hrp-l0-MV4" secondAttribute="trailing" constant="-10" id="SPP-G8-f3l"/>
+                            <constraint firstItem="Hrp-l0-MV4" firstAttribute="leading" secondItem="CJu-6z-WCf" secondAttribute="trailing" constant="8" id="aH0-cM-B2I"/>
+                            <constraint firstItem="Hrp-l0-MV4" firstAttribute="top" secondItem="CJu-6z-WCf" secondAttribute="top" id="kuq-Hw-Fur"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Hrp-l0-MV4"/>
+                                <exclude reference="THV-Pd-VUG"/>
+                                <exclude reference="lqU-DX-Yco"/>
+                                <exclude reference="Mf6-a7-6w2"/>
+                                <exclude reference="rwU-Iw-v01"/>
+                                <exclude reference="VIF-db-qni"/>
+                                <exclude reference="7t5-Rh-gXX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="RfT-QT-5nI"/>
+                                <exclude reference="7Ng-nV-0Eu"/>
+                                <exclude reference="QG6-nW-f4C"/>
+                                <exclude reference="SPP-G8-f3l"/>
+                                <exclude reference="aH0-cM-B2I"/>
+                                <exclude reference="kuq-Hw-Fur"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Hrp-l0-MV4"/>
+                                <include reference="THV-Pd-VUG"/>
+                                <include reference="lqU-DX-Yco"/>
+                                <include reference="Mf6-a7-6w2"/>
+                                <include reference="rwU-Iw-v01"/>
+                                <include reference="VIF-db-qni"/>
+                                <include reference="7t5-Rh-gXX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="RfT-QT-5nI"/>
+                                <include reference="7Ng-nV-0Eu"/>
+                                <include reference="QG6-nW-f4C"/>
+                                <include reference="SPP-G8-f3l"/>
+                                <include reference="aH0-cM-B2I"/>
+                                <include reference="kuq-Hw-Fur"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="bloodBar" destination="CJu-6z-WCf" id="poY-ju-v6B"/>
+                        <outlet property="carButton" destination="THV-Pd-VUG" id="b09-VB-EXV"/>
+                        <outlet property="extraImageView" destination="VIF-db-qni" id="jjn-T8-Xtc"/>
+                        <outlet property="foodButton" destination="Mf6-a7-6w2" id="op6-FJ-e3B"/>
+                        <outlet property="garlicButton" destination="lqU-DX-Yco" id="IbX-AZ-Iew"/>
+                        <outlet property="happynessBar" destination="Hrp-l0-MV4" id="VMs-2r-lOd"/>
+                        <outlet property="sleepButton" destination="7t5-Rh-gXX" id="EYF-nJ-wqE"/>
+                        <outlet property="vampireImageView" destination="rwU-Iw-v01" id="C07-wB-ld1"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="184.5" y="375"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.9083412247474747" green="0.9083412247474747" blue="0.9083412247474747" alpha="1" colorSpace="calibratedRGB"/>
 </document>
